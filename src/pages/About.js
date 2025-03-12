@@ -3,10 +3,9 @@ import React from "react";
 function About() {
   return (
     <div className="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center">
-      {/* Profile Image */}
       <div className="w-full md:w-1/3 flex justify-center">
         <img 
-          src="\GraduationPhoto.jpeg" // Replace with your actual image URL
+          src={`${process.env.PUBLIC_URL}/GraduationPhoto.jpeg`} 
           alt="Jordy Velinov"
           className="rounded-full shadow-lg w-48 h-48 md:w-64 md:h-64 object-cover"
         />
